@@ -41,3 +41,31 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
     
 
 7. Use Pandas to print the summary statistics for the precipitation data.
+
+### Station Analysis
+
+1. Design a query to calculate the total number of stations in the dataset.
+
+2. Design a query to find the most-active stations (that is, the stations that have the most rows). To do so, complete the following steps:
+
+    * List the stations and observation counts in descending order.
+
+    > **Hint** You’ll need to use the `func.count` function in your query.
+
+    * Answer the following question: which station id has the greatest number of observations?
+
+3. Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.
+
+    > **Hint** You’ll need to use functions such as `func.min`, `func.max`, and `func.avg` in your query.
+
+4. Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:
+
+    * Filter by the station that has the greatest number of observations.
+
+    * Query the previous 12 months of TOBS data for that station.
+
+    * Plot the results as a histogram with `bins=12`, as the following image shows:
+
+      ![A screenshot depicts the histogram.](https://static.bc-edx.com/data/dl-1-2/m10/lms/img/station-histogram.jpg)
+
+5. Close your session.
