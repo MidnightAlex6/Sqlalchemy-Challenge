@@ -2,6 +2,8 @@
 
 ![banner](https://user-images.githubusercontent.com/126301312/236589949-662637f5-eb68-40a2-b567-e8cdfeae7f08.png)
 
+![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236590973-9a7f9b00-583c-48e4-98eb-6c06eb3947de.png)
+
 ## Background 
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii. To help with your trip planning, you decide to do a climate analysis about the area. The following sections outline the steps that you need to take to accomplish this task.
@@ -12,7 +14,7 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 <details>
 <summary>Precipitation in Hawaii</summary>
-    ![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236590948-07863db0-ee53-46bf-a4a9-5ca2d8561199.png)
+    ![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236590973-9a7f9b00-583c-48e4-98eb-6c06eb3947de.png)
 </details>
 
 <details>
