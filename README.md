@@ -13,13 +13,13 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 <details>
 
 <summary>Precipitation in Hawaii</summary>
+    Hello
     
 </details>
 
 <details>
 <summary>Temperature Observations</summary> 
-    
-    <img src="https://user-images.githubusercontent.com/126301312/236591050-8e339400-7689-4831-8d6c-e3ad9da3d398.png" alt="Temperature Observations">
+    Hello
     
 </details>
 
