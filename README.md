@@ -12,7 +12,7 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 <details>
 <summary>Precipitation in Hawaii</summary>
-    
+    ![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236590948-07863db0-ee53-46bf-a4a9-5ca2d8561199.png)
 </details>
 
 <details>
