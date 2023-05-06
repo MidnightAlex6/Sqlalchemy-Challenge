@@ -40,7 +40,7 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
     <details>
     <summary>Graph</summary>
-    
+    ![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236590648-bc64ee43-03c8-47ab-9f3a-9b6a740c889f.png)
     </details>
 
 7. Use Pandas to print the summary statistics for the precipitation data.
