@@ -10,10 +10,9 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 ### Graphs
 
-    *Precipitation in Hawaii
+*Precipitation in Hawaii
 
-    *Temperature Observations
-
+*Temperature Observations
 
 ### Resources
 
