@@ -14,7 +14,7 @@ from flask import Flask, jsonify
 #################################################
 
 # reflect an existing database into a new model
-engine = create_engine("sqlite:///hawaii.sqlite")
+engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
 # reflect the tables
 Base = automap_base()
 Base.prepare(engine, reflect=True)
@@ -108,11 +108,11 @@ def stats_start(start):
         stat_dict["avg"] = avg
         stat_dict["max"] = max
 
-# Append each dictionary to the stats list
+    # Append each dictionary to the stats list
     stats.append(stat_dict)
 
-# Return the JSON representation of the stats list
-return jsonify(stats)
+    # Return the JSON representation of the stats list
+    return jsonify(stats)
 
 #################################################
 
