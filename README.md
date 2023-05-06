@@ -66,6 +66,6 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
     * Plot the results as a histogram with `bins=12`, as the following image shows:
 
-      ![A screenshot depicts the histogram.](https://static.bc-edx.com/data/dl-1-2/m10/lms/img/station-histogram.jpg)
+      
 
 5. Close your session.
