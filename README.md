@@ -22,7 +22,7 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
 5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
 
-##### Precipitation Analysis
+## Precipitation Analysis
 
 1. Find the most recent date in the dataset.
 
