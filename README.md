@@ -16,7 +16,21 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 ### Resources
 
+ *   Banner.png
+
+ *   hawaii_measurements.csv
+ 
+ *   hawaii_stations.csv
+ 
+ *   hawaii.splite
+ 
+ *   Module_10_Instructions
+
 ### SurfsUp
+
+ *   app.py
+
+ *   climate_starter.ipynb
 
 ## Part 1: Analyze and Explore the Climate Data
 
