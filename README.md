@@ -64,10 +64,8 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
 6. Plot the results by using the DataFrame `plot` method, as the following image shows:
 
-    <details>
-    <summary>Graph</summary>
-    
-    </details>
+
+![Precipitation_in_Hawaii](https://user-images.githubusercontent.com/126301312/236591535-40006b91-3736-4906-a6c4-432e397af8a1.png)
 
 7. Use Pandas to print the summary statistics for the precipitation data.
 
@@ -95,10 +93,7 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 
     * Plot the results as a histogram with `bins=12`, as the following image shows:
 
-    <details>
-    <summary>Graph</summary>
-    
-    </details>
+   ![Temperature_Observations](https://user-images.githubusercontent.com/126301312/236591569-3224f71a-e060-41fa-98fc-c029122da0d4.png)
       
 5. Close your session.
 
