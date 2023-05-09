@@ -16,7 +16,7 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 ### Resources
 
- *   Banner.png
+ *   Banner.png - image for ReadME file
 
  *   hawaii_measurements.csv
  
@@ -28,9 +28,9 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 ### SurfsUp
 
- *   app.py
+ *   app.py - Flash API based on queries from climate_starter.ipynb file
 
- *   climate_starter.ipynb
+ *   climate_starter.ipynb - Analysis and Exploration of the Climate Data
 
 ## Part 1: Analyze and Explore the Climate Data
 
