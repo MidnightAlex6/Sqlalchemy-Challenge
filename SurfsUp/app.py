@@ -1,11 +1,13 @@
 # Import the dependencies.
 import numpy as np
 import datetime as dt
+import os
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+from datetime import timedelta
 
 from flask import Flask, jsonify
 
@@ -14,10 +16,14 @@ from flask import Flask, jsonify
 #################################################
 
 # reflect an existing database into a new model
-engine = create_engine("sqlite:///../Resources/hawaii.sqlite")
+
+path = "sqlite:///../Resources/hawaii.sqlite" 
+engine = create_engine(path)
+
 # reflect the tables
 Base = automap_base()
-Base.prepare(engine, reflect=True)
+Base.prepare(autoload_with=engine)
+#Base.prepare(engine, reflect=True)
 
 # Save references to each table
 Measurement = Base.classes.measurement
@@ -49,8 +55,13 @@ def welcome():
 # Define precipitation route
 @app.route("/api/v1.0/precipitation")
 def precipitation():
+    # Create a new engine and session for each request
+    path = "sqlite:///../Resources/hawaii.sqlite" 
+    engine = create_engine(path)
+    session = Session(engine)
+
     # Calculate the date 1 year ago from last date in database
-    prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
+    prev_year = dt.date(2017, 8, 23) - timedelta(days=365)
 
     # Query for the date and precipitation for the last year
     precipitation = session.query(Measurement.date, Measurement.prcp).\
@@ -59,11 +70,18 @@ def precipitation():
     # Convert query results to dictionary using date as the key and prcp as the value
     precip = {date: prcp for date, prcp in precipitation}
 
+    # Close the session and engine
+    session.close()
+    engine.dispose()
+
     return jsonify(precip)
 
 # Define station route
 @app.route("/api/v1.0/stations")
 def stations():
+    # Create a new session for each request
+    session = Session(engine)
+
     # Query all stations
     results = session.query(Station.station, Station.name).all()
 
@@ -74,6 +92,9 @@ def stations():
         station_dict["station"] = station
         station_dict["name"] = name
         stations.append(station_dict)
+
+    # Close the session
+    session.close()
 
     return jsonify(stations)
 
@@ -96,6 +117,11 @@ def temp_monthly():
 # Define statistics route with a start date
 @app.route("/api/v1.0/<start>")
 def stats_start(start):
+    # Create a new engine and session for each request
+    path = "sqlite:///../Resources/hawaii.sqlite" 
+    engine = create_engine(path)
+    session = Session(engine)
+
     # Calculate TMIN, TAVG, and TMAX for all dates greater than or equal to the start date
     results = session.query(func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs)).\
         filter(Measurement.date >= start).all()
@@ -111,8 +137,14 @@ def stats_start(start):
     # Append each dictionary to the stats list
     stats.append(stat_dict)
 
+    # Close the session and engine
+    session.close()
+    engine.dispose()
+
     # Return the JSON representation of the stats list
     return jsonify(stats)
+
+
 
 #################################################
 
